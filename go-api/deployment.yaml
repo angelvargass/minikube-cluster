@@ -25,7 +25,7 @@ spec:
         - containerPort: 8080
         env:
         - name: DB_URL
-          value: "postgresql://database-cluster-rw.database.svc.cluster.local/app"
+          value: "postgresql://app:QOHm6ml8nfpjUBH7o8epwGIcEf5n6HvIoXzHBHQkaNbuangXtU12IwVG4Xcc3QHK@database-cluster-rw.database:5432/app"
         livenessProbe:
           httpGet:
             path: /v1/healthz
