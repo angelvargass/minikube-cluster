@@ -15,3 +15,6 @@ Password: ``kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath
 
 # Connect to PGAdmin4 for CNPG
 ``kubectl port-forward deployment/database-cluster-pgadmin4 8080:80 -n database``
+
+# Port-forward for go-api API
+``kubectl port-forward service/go-api-service 8080:8080 -n go-api``
